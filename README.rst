@@ -7,7 +7,7 @@ Tools to make Othona office and organisational tasks easier.
 Quick Start
 -----------
 
-For full documentation people refer to the [github pages page]<(tomfarley.github.io/othona/index.html)
+For full documentation people refer to the `github pages page<tomfarley.github.io/othona/index.html`_.
 
 .. highlight:: python
 

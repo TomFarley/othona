@@ -5,10 +5,13 @@ The diagram below gives an overview of the planned classes.
 ```mermaid
     classDiagram
         
-        class PeopleData{
+        class ParticipantData{
+            +str : event
+            +DataFrame : participant_data
             +DataFrame : civi_data
             +run_checks() # Unique names etc
             +format()
+            +read_and_merge_data(reader_args, reader_kwargs=(), reader='CiviLocalExportReader')
         }
 
         class CateringList{
