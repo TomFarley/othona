@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>othona.module &#8212; othona 2022.9.dev0 documentation</title>
+    <title>othona.people_data &#8212; othona 2022.9.dev0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -113,8 +113,8 @@
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="../../source/packages/othona.module.html">
-       othona.module module
+      <a class="reference internal" href="../../source/packages/othona.people_data.html">
+       othona.people_data module
       </a>
      </li>
     </ul>
@@ -224,42 +224,36 @@ title="Fullscreen mode"
                 
               <div>
                 
-  <h1>Source code for othona.module</h1><div class="highlight"><pre>
+  <h1>Source code for othona.people_data</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">Module provides a simple cubic_rectification function.</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
 
 
-<div class="viewcode-block" id="cubic_rectification"><a class="viewcode-back" href="../../source/packages/othona.module.html#othona.module.cubic_rectification">[docs]</a><span class="k">def</span> <span class="nf">cubic_rectification</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<div class="viewcode-block" id="CiviLocalExportReader"><a class="viewcode-back" href="../../source/packages/othona.people_data.html#othona.people_data.CiviLocalExportReader">[docs]</a><span class="k">class</span> <span class="nc">CiviLocalExportReader</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Rectified cube of an array.</span>
+<span class="sd">    Reader for spreadsheet file exported from civi database.</span>
 
-<span class="sd">    Parameters</span>
-<span class="sd">    ----------</span>
-<span class="sd">    x : numpy.ndarray</span>
-<span class="sd">        Input array.</span>
-<span class="sd">    verbose : bool, optional</span>
-<span class="sd">        Whether to print out details. Default is ``False``.</span>
-
-<span class="sd">    Returns</span>
-<span class="sd">    -------</span>
-<span class="sd">    numpy.ndarray</span>
-<span class="sd">        Elementwise, the cube of `x` where it is positive and ``0`` otherwise.</span>
-
-<span class="sd">    Note</span>
-<span class="sd">    ----</span>
-<span class="sd">    This is a sample function, using a numpy docstring format.</span>
-
-<span class="sd">    Note</span>
-<span class="sd">    ----</span>
-<span class="sd">    The use of intersphinx will cause :class:`numpy.ndarray` to link to</span>
-<span class="sd">    the numpy documentation page.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cubing and then rectifying </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">maximum</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="CiviLocalExportReader.__init__"><a class="viewcode-back" href="../../source/packages/othona.people_data.html#othona.people_data.CiviLocalExportReader.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fn_civi_export</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        x : str</span>
+<span class="sd">            Input filename.</span>
+<span class="sd">        </span>
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        pd.DataFrame</span>
+<span class="sd">            Pandas dataframe containing contense of civi export spreadsheet</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">civi_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">fn_civi_export</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">civi_data</span></div></div>
 </pre></div>
 
               </div>

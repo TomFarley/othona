@@ -1,0 +1,7 @@
+othona.people\_data module
+==========================
+
+.. automodule:: othona.people_data
+   :members:
+   :undoc-members:
+   :show-inheritance:

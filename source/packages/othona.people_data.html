@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>othona.module module &#8212; othona 2022.9.dev0 documentation</title>
+    <title>othona.people_data module &#8212; othona 2022.9.dev0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -116,7 +116,7 @@
     <ul class="current">
      <li class="toctree-l3 current active">
       <a class="current reference internal" href="#">
-       othona.module module
+       othona.people_data module
       </a>
      </li>
     </ul>
@@ -211,7 +211,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/source/packages/othona.module.rst.txt"
+        <a href="../../_sources/source/packages/othona.people_data.rst.txt"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -260,7 +260,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>othona.module module</h1>
+                <h1>othona.people_data module</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -272,36 +272,30 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="section" id="module-othona.module">
-<span id="othona-module-module"></span><h1>othona.module module<a class="headerlink" href="#module-othona.module" title="Permalink to this heading">#</a></h1>
+  <div class="section" id="module-othona.people_data">
+<span id="othona-people-data-module"></span><h1>othona.people_data module<a class="headerlink" href="#module-othona.people_data" title="Permalink to this heading">#</a></h1>
 <p>Module provides a simple cubic_rectification function.</p>
-<dl class="py function">
-<dt class="sig sig-object py" id="othona.module.cubic_rectification">
-<span class="sig-prename descclassname"><span class="pre">othona.module.</span></span><span class="sig-name descname"><span class="pre">cubic_rectification</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/othona/module.html#cubic_rectification"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#othona.module.cubic_rectification" title="Permalink to this definition">#</a></dt>
-<dd><p>Rectified cube of an array.</p>
-<dl class="field-list simple">
+<dl class="py class">
+<dt class="sig sig-object py" id="othona.people_data.CiviLocalExportReader">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">othona.people_data.</span></span><span class="sig-name descname"><span class="pre">CiviLocalExportReader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fn_civi_export</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/othona/people_data.html#CiviLocalExportReader"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#othona.people_data.CiviLocalExportReader" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Reader for spreadsheet file exported from civi database.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="othona.people_data.CiviLocalExportReader.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fn_civi_export</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/othona/people_data.html#CiviLocalExportReader.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#othona.people_data.CiviLocalExportReader.__init__" title="Permalink to this definition">#</a></dt>
+<dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>x</strong> (<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.23)"><em>numpy.ndarray</em></a>) – Input array.</p></li>
-<li><p><strong>verbose</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to print out details. Default is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
-</ul>
+<dd class="field-odd"><p><strong>x</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – Input filename.</p>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Elementwise, the cube of <cite>x</cite> where it is positive and <code class="docutils literal notranslate"><span class="pre">0</span></code> otherwise.</p>
+<dd class="field-even"><p>Pandas dataframe containing contense of civi export spreadsheet</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.23)">numpy.ndarray</a></p>
+<dd class="field-odd"><p>pd.DataFrame</p>
 </dd>
 </dl>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This is a sample function, using a numpy docstring format.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The use of intersphinx will cause <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.23)"><code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></a> to link to
-the numpy documentation page.</p>
-</div>
+</dd></dl>
+
 </dd></dl>
 
 </div>
