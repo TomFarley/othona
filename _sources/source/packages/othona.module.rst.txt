@@ -1,0 +1,7 @@
+othona.module module
+====================
+
+.. automodule:: othona.module
+   :members:
+   :undoc-members:
+   :show-inheritance:

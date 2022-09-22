@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Python Template Repository &#8212; package-name 0.1.dev0 documentation</title>
+    <title>Python Template Repository &#8212; othona 2022.9.dev0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -74,7 +74,7 @@
       
       
       
-      <h1 class="site-logo" id="site-title">package-name 0.1.dev0 documentation</h1>
+      <h1 class="site-logo" id="site-title">othona 2022.9.dev0 documentation</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -99,8 +99,8 @@
   </label>
   <ul>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="source/packages/package_name.html">
-     package_name package
+    <a class="reference internal" href="source/packages/othona.html">
+     othona package
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
     <label for="toctree-checkbox-2">
@@ -109,8 +109,8 @@
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="source/packages/package_name.module.html">
-       package_name.module module
+      <a class="reference internal" href="source/packages/othona.module.html">
+       othona.module module
       </a>
      </li>
     </ul>
@@ -472,7 +472,7 @@ title="Print to PDF"
 The fork button is for making a new template based in this one, not for using the template to make a new repository.</p></li>
 <li><ol class="arabic">
 <li><p><strong>New GitHub repository</strong>.</p>
-<p>You can create a new repository on GitHub from this template by clicking the <a class="reference external" href="https://github.com/scottclowe/python-template-repo/generate">Use this template</a> button.</p>
+<p>You can create a new repository on GitHub from this template by clicking the <a class="reference external" href="https://github.com/TomFarley/othona/generate">Use this template</a> button.</p>
 <p><em>Need to support Python 2.7?</em>
 Make sure to check the “Include all branches” option while creating the new repository.</p>
 <p>Then clone your new repository to your local system [pseudocode]:</p>
@@ -488,21 +488,21 @@ git push -f
 <p>You can now delete the python2.7 branch from your remote.</p>
 </li>
 <li><p><strong>New repository not on GitHub</strong>.</p>
-<p>Alternatively, if your new repository is not going to be on GitHub, you can download <a class="reference external" href="https://github.com/scottclowe/python-template-repo/archive/master.zip">this repo as a zip</a> and work from there.</p>
+<p>Alternatively, if your new repository is not going to be on GitHub, you can download <a class="reference external" href="https://github.com/TomFarley/othona/archive/master.zip">this repo as a zip</a> and work from there.</p>
 <p><em>Need to support Python 2.7?</em>
-Download the <a class="reference external" href="https://github.com/scottclowe/python-template-repo/archive/refs/heads/python2.7.zip">python2.7 branch as a zip</a> instead.</p>
+Download the <a class="reference external" href="https://github.com/TomFarley/othona/archive/refs/heads/python2.7.zip">python2.7 branch as a zip</a> instead.</p>
 <p>Either way, you should note that this zip does not include the .gitignore and .gitattributes files (because GitHub automatically omits them, which is usually helpful but is not for our purposes).
-Thus you will also need to download the <a class="reference external" href="https://raw.githubusercontent.com/scottclowe/python-template-repo/master/.gitignore">.gitignore</a> and <a class="reference external" href="https://raw.githubusercontent.com/scottclowe/python-template-repo/master/.gitattributes">.gitattributes</a> files.</p>
+Thus you will also need to download the <a class="reference external" href="https://raw.githubusercontent.com/TomFarley/othona/master/.gitignore">.gitignore</a> and <a class="reference external" href="https://raw.githubusercontent.com/TomFarley/othona/master/.gitattributes">.gitattributes</a> files.</p>
 <p>The following shell commands can be used for this purpose on *nix systems:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git init your_repo_name
 <span class="nb">cd</span> your_repo_name
-wget https://github.com/scottclowe/python-template-repo/archive/master.zip
+wget https://github.com/TomFarley/othona/archive/master.zip
 unzip master.zip
 mv -n python-template-repo-master/* python-template-repo-master/.<span class="o">[</span>!.<span class="o">]</span>* .
 rm -r python-template-repo-master/
 rm master.zip
-wget https://raw.githubusercontent.com/scottclowe/python-template-repo/master/.gitignore
-wget https://raw.githubusercontent.com/scottclowe/python-template-repo/master/.gitattributes
+wget https://raw.githubusercontent.com/TomFarley/othona/master/.gitignore
+wget https://raw.githubusercontent.com/TomFarley/othona/master/.gitattributes
 git add .
 git commit -m <span class="s2">&quot;Initial commit&quot;</span>
 git rm LICENSE
@@ -587,22 +587,22 @@ sed -i <span class="s2">&quot;s/package_name/</span><span class="nv">$PACKAGE_NA
 </div>
 <p>Which will make changes in the following places.</p>
 <ul>
-<li><p>In <code class="docutils literal notranslate"><span class="pre">setup.py</span></code>, <a class="reference external" href="https://github.com/scottclowe/python-template-repo/blob/master/setup.py#L69">L69</a>:</p>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">setup.py</span></code>, <a class="reference external" href="https://github.com/TomFarley/othona/blob/master/setup.py#L69">L69</a>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">exec</span><span class="p">(</span><span class="n">read</span><span class="p">(</span><span class="s1">&#39;package_name/__meta__.py&#39;</span><span class="p">),</span> <span class="n">meta</span><span class="p">)</span>
 </pre></div>
 </div>
 </li>
-<li><p>In <code class="docutils literal notranslate"><span class="pre">docs/conf.py</span></code>, <a class="reference external" href="https://github.com/scottclowe/python-template-repo/blob/master/docs/conf.py#L23">L23</a>:</p>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">docs/conf.py</span></code>, <a class="reference external" href="https://github.com/TomFarley/othona/blob/master/docs/conf.py#L23">L23</a>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">package_name</span> <span class="kn">import</span> <span class="n">__meta__</span> <span class="k">as</span> <span class="n">meta</span>  <span class="c1"># noqa: E402</span>
 </pre></div>
 </div>
 </li>
-<li><p>In <code class="docutils literal notranslate"><span class="pre">docs/index.rst</span></code>, <a class="reference external" href="https://github.com/scottclowe/python-template-repo/blob/master/docs/index.rst#L1">L1</a>:</p>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">docs/index.rst</span></code>, <a class="reference external" href="https://github.com/TomFarley/othona/blob/master/docs/index.rst#L1">L1</a>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">package_name</span> <span class="n">documentation</span>
 </pre></div>
 </div>
 </li>
-<li><p>In <code class="docutils literal notranslate"><span class="pre">.github/workflows/test.yaml</span></code>, <a class="reference external" href="https://github.com/scottclowe/python-template-repo/blob/master/.github/workflows/test.yaml#L78">L78</a>, and <code class="docutils literal notranslate"><span class="pre">.github/workflows/test-release-candidate.yaml</span></code>, <a class="reference external" href="https://github.com/scottclowe/python-template-repo/blob/master/.github/workflows/test-release-candidate.yaml#L90">L90</a>:</p>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">.github/workflows/test.yaml</span></code>, <a class="reference external" href="https://github.com/TomFarley/othona/blob/master/.github/workflows/test.yaml#L78">L78</a>, and <code class="docutils literal notranslate"><span class="pre">.github/workflows/test-release-candidate.yaml</span></code>, <a class="reference external" href="https://github.com/TomFarley/othona/blob/master/.github/workflows/test-release-candidate.yaml#L90">L90</a>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pytest</span> <span class="o">--</span><span class="n">cov</span><span class="o">=</span><span class="n">package_name</span> <span class="o">--</span><span class="n">cov</span><span class="o">-</span><span class="n">report</span> <span class="n">term</span> <span class="o">--</span><span class="n">cov</span><span class="o">-</span><span class="n">report</span> <span class="n">xml</span> <span class="o">--</span><span class="n">cov</span><span class="o">-</span><span class="n">config</span> <span class="o">.</span><span class="n">coveragerc</span> <span class="o">--</span><span class="n">junitxml</span><span class="o">=</span><span class="n">testresults</span><span class="o">.</span><span class="n">xml</span>
 </pre></div>
 </div>
@@ -612,7 +612,7 @@ sed -i <span class="s2">&quot;s/package_name/</span><span class="nv">$PACKAGE_NA
 <li><p>Swap out the contents of <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> for your project’s current requirements.
 If you don’t have any requirements yet, delete the contents of <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code>.</p></li>
 <li><p>Swap out the contents of <code class="docutils literal notranslate"><span class="pre">README.rst</span></code> with an inital description of your project.
-If you are keeping all the badges, make sure to change the URLs from <code class="docutils literal notranslate"><span class="pre">scottclowe/python-template-repo</span></code> to <code class="docutils literal notranslate"><span class="pre">your_username/your_repo</span></code>.
+If you are keeping all the badges, make sure to change the URLs from <code class="docutils literal notranslate"><span class="pre">TomFarley/othona</span></code> to <code class="docutils literal notranslate"><span class="pre">your_username/your_repo</span></code>.
 If you prefer, you can use markdown instead of rST.</p></li>
 <li><p>Commit and push your changes:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git commit -am <span class="s2">&quot;Initialise project from template repository&quot;</span>
@@ -662,10 +662,10 @@ For a given block of code, a fixed version of black will always produce the same
 However, you should note that different versions of black will produce different outputs.
 If you want to upgrade to a newer version of black, you must change the version everywhere it is specified:</p>
 <ul class="simple">
-<li><p>requirements-dev.txt, <a class="reference external" href="https://github.com/scottclowe/python-template-repo/blob/master/requirements-dev.txt#L1">L1</a></p></li>
-<li><p>.pre-commit-config.yaml, <a class="reference external" href="https://github.com/scottclowe/python-template-repo/blob/master/.pre-commit-config.yaml#L14">L14</a>,
-<a class="reference external" href="https://github.com/scottclowe/python-template-repo/blob/master/.pre-commit-config.yaml#L28">L28</a>, and
-<a class="reference external" href="https://github.com/scottclowe/python-template-repo/blob/master/.pre-commit-config.yaml#L47">L47</a></p></li>
+<li><p>requirements-dev.txt, <a class="reference external" href="https://github.com/TomFarley/othona/blob/master/requirements-dev.txt#L1">L1</a></p></li>
+<li><p>.pre-commit-config.yaml, <a class="reference external" href="https://github.com/TomFarley/othona/blob/master/.pre-commit-config.yaml#L14">L14</a>,
+<a class="reference external" href="https://github.com/TomFarley/othona/blob/master/.pre-commit-config.yaml#L28">L28</a>, and
+<a class="reference external" href="https://github.com/TomFarley/othona/blob/master/.pre-commit-config.yaml#L47">L47</a></p></li>
 </ul>
 </div>
 <div class="section" id="pre-commit">
@@ -863,7 +863,7 @@ This offers an alternative to GitHub Actions if you need to <a class="reference 
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="source/packages/modules.html">API Reference</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="source/packages/package_name.html">package_name package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="source/packages/othona.html">othona package</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="source/changelog.html">Changelog</a><ul>
@@ -899,9 +899,9 @@ This offers an alternative to GitHub Actions if you need to <a class="reference 
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By Author Name<br/>
+    By Tom Farley<br/>
   
-      &copy; Copyright 2022, Author Name.<br/>
+      &copy; Copyright 2022, Tom Farley.<br/>
 </p>
         </footer>
     </div>
