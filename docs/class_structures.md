@@ -22,7 +22,9 @@
             +__init__(name, people_data)
         }
 
-        class DataClass{}
+        class DataClass{
+            
+        }
 
         DataClass <-- CateringList
         DataClass <-- PeopleData
