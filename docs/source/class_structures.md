@@ -1,5 +1,7 @@
 # Class Structures
 
+The diagram below gives an overview of the planned classes.
+
 ```mermaid
     classDiagram
         
@@ -19,13 +21,16 @@
         }
 
         class Person{
+            +String : name
+            +DataFrame : people_data
             +__init__(name, people_data)
         }
 
         class DataClass{
-            
+
         }
 
         DataClass <-- CateringList
         DataClass <-- PeopleData
+        PeopleData *-- PeopleData
 ```
