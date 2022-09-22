@@ -8,8 +8,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from othona import people_data
-from othona.people_data import ParticipantData, CiviLocalExportReader
+from othona import participant_data
+from othona.participant_data import ParticipantData, CiviLocalExportReader
 from .base_test import BaseTestCase, unittest
 
 cwd = Path(os.getcwd())
@@ -34,7 +34,7 @@ class TestParticipantData(BaseTestCase):
     """
     Tests for the PeopleData class.
     """ 
-    def init_empty(self):
+    def test_init_empty(self):
         """Test init empty instance"""
 
         event = 'test_event'

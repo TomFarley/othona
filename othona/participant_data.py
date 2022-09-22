@@ -51,7 +51,7 @@ class ParticipantData:
     event: str
     participant_data: pd.DataFrame = pd.DataFrame([])
     civi_data: pd.DataFrame = None
-    catering_list: Optional(pd.DataFrame) = None
+    catering_list: Optional[pd.DataFrame] = None
 
     def run_checks():
         raise NotImplementedError
