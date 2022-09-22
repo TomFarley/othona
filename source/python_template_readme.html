@@ -1,0 +1,838 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Template Repository &#8212; othona 2022.9.dev0 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/rtd_sphinx_search.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/js/rtd_sphinx_search.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">othona 2022.9.dev0 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="class_structures.html">
+   Class Structures
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="packages/modules.html">
+   API Reference
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="packages/othona.html">
+     othona package
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="packages/othona.module.html">
+       othona.module module
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../py-modindex.html">
+   Module Index
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../genindex.html">
+   Index
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/source/python_template_readme.md.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quick-start">
+   Quick start
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#features">
+   Features
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Python Template Repository</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quick-start">
+   Quick start
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#features">
+   Features
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="section" id="python-template-repository">
+<h1>Python Template Repository<a class="headerlink" href="#python-template-repository" title="Permalink to this heading">#</a></h1>
+<p>This repository gives a fully-featured template or skeleton for new Python repositories.</p>
+<div class="section" id="quick-start">
+<h2>Quick start<a class="headerlink" href="#quick-start" title="Permalink to this heading">#</a></h2>
+<p>.. highlight:: bash</p>
+<p>When creating a new repository from this template, these are the steps to follow:</p>
+<p>#. <em>Don’t click the fork button.</em>
+The fork button is for making a new template based in this one, not for using the template to make a new repository.</p>
+<p>#.
+#.  <strong>New GitHub repository</strong>.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    You can create a new repository on GitHub from this template by clicking the `Use this template &lt;https://github.com/TomFarley/othona/generate&gt;`_ button.
+
+    *Need to support Python 2.7?*
+    Make sure to check the &quot;Include all branches&quot; option while creating the new repository.
+
+    Then clone your new repository to your local system [pseudocode]::
+
+      git clone git@github.com:your-org/your-repo.git
+      cd your-repo
+
+    *If you need to support Python 2.7*, now move the reference for your default branch (master/main) to point to the python2.7 branch head::
+
+      git reset --hard origin/python2.7
+      git push -f
+
+    You can now delete the python2.7 branch from your remote.
+
+#.  **New repository not on GitHub**.
+
+    Alternatively, if your new repository is not going to be on GitHub, you can download `this repo as a zip &lt;https://github.com/TomFarley/othona/archive/master.zip&gt;`_ and work from there.
+
+    *Need to support Python 2.7?*
+    Download the `python2.7 branch as a zip &lt;https://github.com/TomFarley/othona/archive/refs/heads/python2.7.zip&gt;`_ instead.
+
+    Either way, you should note that this zip does not include the .gitignore and .gitattributes files (because GitHub automatically omits them, which is usually helpful but is not for our purposes).
+    Thus you will also need to download the `.gitignore &lt;https://raw.githubusercontent.com/TomFarley/othona/master/.gitignore&gt;`__ and `.gitattributes &lt;https://raw.githubusercontent.com/TomFarley/othona/master/.gitattributes&gt;`__ files.
+
+    The following shell commands can be used for this purpose on \*nix systems::
+
+      git init your_repo_name
+      cd your_repo_name
+      wget https://github.com/TomFarley/othona/archive/master.zip
+      unzip master.zip
+      mv -n python-template-repo-master/* python-template-repo-master/.[!.]* .
+      rm -r python-template-repo-master/
+      rm master.zip
+      wget https://raw.githubusercontent.com/TomFarley/othona/master/.gitignore
+      wget https://raw.githubusercontent.com/TomFarley/othona/master/.gitattributes
+      git add .
+      git commit -m &quot;Initial commit&quot;
+      git rm LICENSE
+
+    Note that we are doing the move with ``mv -n``, which will prevent the template repository from clobbering your own files (in case you already made a README.rst file, for instance).
+
+    You&#39;ll need to instruct your new local repository to synchronise with the remote ``your_repo_url``::
+
+      git remote set-url origin your_repo_url
+      git push -u origin master
+</pre></div>
+</div>
+<p>#.  Remove the dummy files <code class="docutils literal notranslate"><span class="pre">package_name/module.py</span></code> and <code class="docutils literal notranslate"><span class="pre">package_name/tests/test_module.py</span></code>::</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    rm package_name/module.py
+    rm package_name/tests/test_module.py
+
+If you prefer, you can keep them around as samples, but should note that they require numpy.
+</pre></div>
+</div>
+<p>#.  Depending on your needs, some of the files may be superfluous to you.
+You can remove any superfluous files, as follows.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- *No GitHub Actions!*
+  Delete the .github directory::
+
+    rm -r .github/
+
+- *No unit testing!*
+  Run the following commands to delete unit testing files::
+
+    rm -rf package_name/tests/
+    rm -f .github/workflows/test*.yaml
+    rm -f .codecov.yml
+    rm -f .coveragerc
+    rm -f requirements-test.txt
+</pre></div>
+</div>
+<p>#.  Delete the LICENSE file and replace it with a LICENSE file of your own choosing.
+If the code is intended to be freely available for anyone to use, use an <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">source</span> <span class="pre">license</span> <span class="pre">&lt;https://choosealicense.com/&gt;</span></code>_, such as <code class="docutils literal notranslate"><span class="pre">MIT</span> <span class="pre">License</span> <span class="pre">&lt;https://choosealicense.com/licenses/mit/&gt;</span></code>__ or <code class="docutils literal notranslate"><span class="pre">GPLv3</span> <span class="pre">&lt;https://choosealicense.com/licenses/gpl-3.0/&gt;</span></code>__.
+If you don’t want your code to be used by anyone else, add a LICENSE file which just says:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.. code-block:: none
+
+    Copyright (c) YEAR, YOUR NAME
+
+    All right reserved.
+
+Note that if you don&#39;t include a LICENSE file, you will still have copyright over your own code (this copyright is automatically granted), and your code will be private source (technically nobody else will be permitted to use it, even if you make your code publicly available).
+</pre></div>
+</div>
+<p>#.  Edit the file <code class="docutils literal notranslate"><span class="pre">package_name/__meta__.py</span></code> to contain your author and repo details.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>name
+    The name as it will/would be on PyPI (users will do ``pip install new_name_here``).
+    It is `recommended &lt;PEP-8_&gt;`__ to use a name all lowercase, runtogetherwords but if separators are needed hyphens are preferred over underscores.
+
+path
+    The path to the package. What you will rename the directory ``package_name``.
+    `Should be &lt;PEP-8_&gt;`__ the same as ``name``, but now hyphens are disallowed and should be swapped for underscores.
+    By default, this is automatically inferred from ``name``.
+
+license
+    Should be the name of the license you just picked and put in the LICENSE file (e.g. ``MIT`` or ``GPLv3``).
+
+Other fields to enter should be self-explanatory.
+</pre></div>
+</div>
+<p>#. Rename the directory <code class="docutils literal notranslate"><span class="pre">package_name</span></code> to be the <code class="docutils literal notranslate"><span class="pre">path</span></code> variable you just added to <code class="docutils literal notranslate"><span class="pre">__meta__.py</span></code>.::</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  PACKAGE_NAME=your_actual_package_name
+  mv package_name &quot;$PACKAGE_NAME&quot;
+</pre></div>
+</div>
+<p>#.  Change references to <code class="docutils literal notranslate"><span class="pre">package_name</span></code> to your path variable:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>This can be done with the sed command::
+
+    PACKAGE_NAME=your_actual_package_name
+    sed -i &quot;s/package_name/$PACKAGE_NAME/&quot; setup.py \
+        docs/conf.py \
+        docs/index.rst \
+        CHANGELOG.rst \
+        .github/workflows/test*.yaml
+
+Which will make changes in the following places.
+
+.. highlight:: python
+
+- In ``setup.py``, `L69 &lt;https://github.com/TomFarley/othona/blob/master/setup.py#L69&gt;`__::
+
+    exec(read(&#39;package_name/__meta__.py&#39;), meta)
+
+- In ``docs/conf.py``, `L23 &lt;https://github.com/TomFarley/othona/blob/master/docs/conf.py#L23&gt;`__::
+
+    from package_name import __meta__ as meta  # noqa: E402
+
+- In ``docs/index.rst``, `L1 &lt;https://github.com/TomFarley/othona/blob/master/docs/index.rst#L1&gt;`__::
+
+    package_name documentation
+
+- In ``.github/workflows/test.yaml``, `L78 &lt;https://github.com/TomFarley/othona/blob/master/.github/workflows/test.yaml#L78&gt;`__, and ``.github/workflows/test-release-candidate.yaml``, `L90 &lt;https://github.com/TomFarley/othona/blob/master/.github/workflows/test-release-candidate.yaml#L90&gt;`__::
+
+    python -m pytest --cov=package_name --cov-report term --cov-report xml --cov-config .coveragerc --junitxml=testresults.xml
+
+.. highlight:: bash
+</pre></div>
+</div>
+<p>#.  Swap out the contents of <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> for your project’s current requirements.
+If you don’t have any requirements yet, delete the contents of <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code>.</p>
+<p>#.  Swap out the contents of <code class="docutils literal notranslate"><span class="pre">README.rst</span></code> with an inital description of your project.
+If you are keeping all the badges, make sure to change the URLs from <code class="docutils literal notranslate"><span class="pre">TomFarley/othona</span></code> to <code class="docutils literal notranslate"><span class="pre">your_username/your_repo</span></code>.
+If you prefer, you can use markdown instead of rST.</p>
+<p>#.  Commit and push your changes::</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  git commit -am &quot;Initialise project from template repository&quot;
+  git push
+</pre></div>
+</div>
+<p>When it comes time to make your first release, make sure you update the placeholder entry in CHANGELOG.rst to contain the correct details.
+You’ll need to change <code class="docutils literal notranslate"><span class="pre">YYYY-MM-DD</span></code> to the actual release date, and change the URL to point to your release.</p>
+</div>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this heading">#</a></h2>
+<p>.gitignore</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+A `.gitignore`_ file is used specify untracked files which Git should ignore and not try to commit.
+
+Our template&#39;s .gitignore file is based on the `GitHub defaults &lt;default-gitignores_&gt;`_.
+We use the default `Python .gitignore`_, `Windows .gitignore`_, `Linux .gitignore`_, and `Mac OSX .gitignore`_ concatenated together.
+(Released under `CC0-1.0 &lt;https://github.com/github/gitignore/blob/master/LICENSE&gt;`__.)
+
+The Python .gitignore specifications prevent compiled files, packaging and sphinx artifacts, test outputs, etc, from being accidentally committed.
+Even though you may develop on one OS, you might find a helpful contributor working on a different OS suddenly issues you a new PR, hence we include the gitignore for all OSes.
+This makes both their life and yours easier by ignoring their temporary files before they even start working on the project.
+
+.. _.gitignore: https://git-scm.com/docs/gitignore
+.. _default-gitignores: https://github.com/github/gitignore
+.. _Python .gitignore: https://github.com/github/gitignore/blob/master/Python.gitignore
+.. _Windows .gitignore: https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
+.. _Linux .gitignore: https://github.com/github/gitignore/blob/master/Global/Linux.gitignore
+.. _Mac OSX .gitignore: https://github.com/github/gitignore/blob/master/Global/macOS.gitignore
+
+
+.gitattributes
+</pre></div>
+</div>
+<p>The most important reason to include a <code class="docutils literal notranslate"><span class="pre">.gitattributes</span></code>_ file is to ensure that line endings are normalised, no matter which OS the developer is using.
+This is largely achieved by the line::</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>* text=auto
+</pre></div>
+</div>
+<p>which <code class="docutils literal notranslate"><span class="pre">ensures</span> <span class="pre">&lt;gitattributes-text_&gt;</span></code>__ that all files Git decides contain text have their line endings normalized to LF on checkin.
+This can cause problems if Git misdiagnoses a file as text when it is not, so we overwrite automatic detection based on file endings for some several common file endings.</p>
+<p>Aside from this, we also gitattributes to tell git what kind of diff to generate.</p>
+<p>Our template .gitattributes file is based on the <code class="docutils literal notranslate"><span class="pre">defaults</span> <span class="pre">from</span> <span class="pre">Alexander</span> <span class="pre">Karatarakis</span> <span class="pre">&lt;alexkaratarakis/gitattributes_&gt;</span></code><strong>.
+We use the <code class="docutils literal notranslate"><span class="pre">Common</span> <span class="pre">.gitattributes</span></code>_ and <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">.gitattributes</span></code>_ concatenated together.
+(Released under <code class="docutils literal notranslate"><span class="pre">MIT</span> <span class="pre">License</span> <span class="pre">&lt;https://github.com/alexkaratarakis/gitattributes/blob/master/LICENSE.md&gt;</span></code></strong>.)</p>
+<p>.. _.gitattributes: https://git-scm.com/docs/gitattributes
+.. _gitattributes-text: https://git-scm.com/docs/gitattributes#_text
+.. _alexkaratarakis/gitattributes: https://github.com/alexkaratarakis/gitattributes
+.. _Common .gitattributes: https://github.com/alexkaratarakis/gitattributes/blob/master/Common.gitattributes
+.. _Python .gitattributes: https://github.com/alexkaratarakis/gitattributes/blob/master/Python.gitattributes</p>
+<p>Black</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+Black_ is an uncompromising Python code formatter.
+By using it, you cede control over minutiae of hand-formatting.
+But in return, you no longer have to worry about formatting your code correctly, since black will handle it.
+Blackened code looks the same for all authors, ensuring consistent code formatting within your project.
+
+The format used by Black makes code review faster by producing the smaller diffs.
+
+Black&#39;s output is always stable.
+For a given block of code, a fixed version of black will always produce the same output.
+However, you should note that different versions of black will produce different outputs.
+If you want to upgrade to a newer version of black, you must change the version everywhere it is specified:
+
+- requirements-dev.txt, `L1 &lt;https://github.com/TomFarley/othona/blob/master/requirements-dev.txt#L1&gt;`__
+- .pre-commit-config.yaml, `L14 &lt;https://github.com/TomFarley/othona/blob/master/.pre-commit-config.yaml#L14&gt;`__,
+  `L28 &lt;https://github.com/TomFarley/othona/blob/master/.pre-commit-config.yaml#L28&gt;`__, and
+  `L47 &lt;https://github.com/TomFarley/othona/blob/master/.pre-commit-config.yaml#L47&gt;`__
+
+.. _black: https://github.com/psf/black
+
+
+pre-commit
+</pre></div>
+</div>
+<p>The template repository comes with a pre-commit_ stack.
+This is a set of git hooks which are executed every time you make a commit.
+The hooks catch errors as they occur, and will automatically fix some of these errors.</p>
+<p>To set up the pre-commit hooks, run the following code from within the repo directory::</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pip install -r requirements-dev.txt
+pre-commit install
+</pre></div>
+</div>
+<p>Whenever you try to commit code which is flagged by the pre-commit hooks, the commit will not go through.
+Some of the pre-commit hooks (such as black_, isort_) will automatically modify your code to fix the issues.
+When this happens, you’ll have to stage the changes made by the commit hooks and then try your commit again.
+Other pre-commit hooks will not modify your code and will just tell you about issues which you’ll then have to manually fix.</p>
+<p>You can also manually run the pre-commit stack on all the files at any time::</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pre-commit run --all-files
+</pre></div>
+</div>
+<p>To force a commit to go through without passing the pre-commit hooks use the <code class="docutils literal notranslate"><span class="pre">--no-verify</span></code> flag::</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>git commit --no-verify
+</pre></div>
+</div>
+<p>The pre-commit stack which comes with the template is highly opinionated, and includes the following operations:</p>
+<ul class="simple">
+<li><p>Code is reformatted to use the black_ style.
+Any code inside docstrings will be formatted to black using blackendocs_.
+All code cells in Jupyter notebooks are also formatted to black using black_nbconvert_.</p></li>
+<li><p>All Jupyter notebooks are cleared using nbstripout_.</p></li>
+<li><p>Imports are automatically sorted using isort_.</p></li>
+<li><p>flake8_ is run to check for conformity to the python style guide PEP-8_, along with several other formatting issues.</p></li>
+<li><p>setup-cfg-fmt_ is used to format any setup.cfg files.</p></li>
+<li><p>Several <code class="docutils literal notranslate"><span class="pre">hooks</span> <span class="pre">from</span> <span class="pre">pre-commit</span> <span class="pre">&lt;pre-commit-hooks_&gt;</span></code>_ are used to screen for non-language specific git issues, such as incomplete git merges, overly large files being commited to the repo, bugged JSON and YAML files.
+JSON files are also prettified automatically to have standardised indentation.
+Entries in requirements.txt files are automatically sorted alphabetically.</p></li>
+<li><p>Several <code class="docutils literal notranslate"><span class="pre">hooks</span> <span class="pre">from</span> <span class="pre">pre-commit</span> <span class="pre">specific</span> <span class="pre">to</span> <span class="pre">python</span> <span class="pre">&lt;pre-commit-py-hooks_&gt;</span></code>_ are used to screen for rST formatting issues, and ensure noqa flags always specify an error code to ignore.</p></li>
+</ul>
+<p>Once it is set up, the pre-commit stack will run locally on every commit.
+The pre-commit stack will also run on github with one of the action workflows, which ensures PRs are checked without having to rely on contributors to enable the pre-commit locally.</p>
+<p>.. _black_nbconvert: https://github.com/dfm/black_nbconvert
+.. _blackendocs: https://github.com/asottile/blacken-docs
+.. _flake8: https://gitlab.com/pycqa/flake8
+.. _isort: https://github.com/timothycrosley/isort
+.. _nbstripout: https://github.com/kynan/nbstripout
+.. _PEP-8: https://www.python.org/dev/peps/pep-0008/
+.. _pre-commit: https://pre-commit.com/
+.. _pre-commit-hooks: https://github.com/pre-commit/pre-commit-hooks
+.. _pre-commit-py-hooks: https://github.com/pre-commit/pygrep-hooks
+.. _setup-cfg-fmt: https://github.com/asottile/setup-cfg-fmt</p>
+<p>Automated documentation</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+The script ``docs/conf.py`` is based on the Sphinx_ default configuration.
+It is set up to work well out of the box, with several features added in.
+
+GitHub Pages
+^^^^^^^^^^^^
+
+If your repository is publicly available, the docs workflow will automatically deploy your documentation to `GitHub Pages`_.
+To enable the documentation, go to the ``Settings &gt; Pages`` pane for your repository and set Source to be the ``gh-pages`` branch (root directory).
+Your automatically compiled documentation will then be publicly available at https://USER.github.io/PACKAGE/.
+
+Since GitHub pages are always publicly available, the workflow will check whether your repository is public or private, and will not deploy the documentation to gh-pages if your repository is private.
+
+The gh-pages documentation is refreshed every time there is a push to your default branch.
+
+Note that only one copy of the documentation is served (the latest version).
+For more mature projects, you may wish to host the documentation readthedocs_ instead, which supports hosting documentation for multiple package versions simultaneously.
+
+.. _GitHub Pages: https://pages.github.com/
+.. _readthedocs: https://readthedocs.org/
+
+Building locally
+^^^^^^^^^^^^^^^^
+
+You can build the web documentation locally with::
+
+   make -C docs html
+
+And view the documentation like so::
+
+   sensible-browser docs/_build/html/index.html
+
+Or you can build pdf documentation::
+
+   make -C docs latexpdf
+
+On Windows, this becomes::
+
+    cd docs
+    make html
+    make latexpdf
+    cd ..
+
+Other documentation features
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Your README.rst will become part of the generated documentation (via a link file ``docs/source/readme.rst``).
+  Note that the first line of README.rst is not included in the documentation, since this is expected to contain badges which you want to render on GitHub, but not include in your documentation pages.
+
+- If you prefer, you can use a README.md file written in GitHub-Flavored Markdown instead of README.rst.
+  This will automatically be handled and incorporate into the generated documentation (via a generated file ``docs/source/readme.rst``).
+  As with a README.rst file, the first line of README.md is not included in the documentation, since this is expected to contain badges which you want to render on GitHub, but not include in your documentation pages.
+
+- Your docstrings to your modules, functions, classes and methods will be used to build a set of API documentation using autodoc_.
+  Our ``docs/conf.py`` is also set up to automatically call autodoc whenever it is run, and the output files which it generates are on the gitignore list.
+  This means you will automatically generate a fresh API description which exactly matches your current docstrings every time you generate the documentation.
+
+- Docstrings can be formatted in plain reST_, or using the `numpy format`_ (recommended), or `Google format`_.
+  Support for numpy and Google formats is through the napoleon_ extension (which we have enabled by default).
+
+- You can reference functions in the python core and common packages and they will automatically be hyperlinked to the appropriate documentation in your own documentation.
+  This is done using intersphinx_ mappings, which you can see (and can add to) at the bottom of the ``docs/conf.py`` file.
+
+- The documentation theme is sphinx-book-theme_.
+  Alternative themes can be found at sphinx-themes.org_, sphinxthemes.com_, and writethedocs_.
+
+.. _autodoc: http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
+.. _Google format: https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html#example-google
+.. _intersphinx: http://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html
+.. _napoleon: https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html
+.. _numpy format: https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html#example-numpy-style-python-docstrings
+.. _Sphinx: https://www.sphinx-doc.org/
+.. _sphinx-book-theme: https://sphinx-book-theme.readthedocs.io/
+.. _sphinx-themes.org: https://sphinx-themes.org
+.. _sphinxthemes.com: https://sphinxthemes.com/
+.. _reST: http://docutils.sourceforge.net/rst.html
+.. _writethedocs: https://www.writethedocs.org/guide/tools/sphinx-themes/
+
+
+Consolidated metadata
+~~~~~~~~~~~~~~~~~~~~~
+
+Package metadata is consolidated into one place, the file ``package_name/__meta__.py``.
+You only have to write the metadata once in this centralised location, and everything else (packaging, documentation, etc) picks it up from there.
+This is similar to `single-sourcing the package version`_, but for all metadata.
+
+This information is available to end-users with ``import package_name; print(package_name.__meta__)``.
+The version information is also accessible at ``package_name.__version__``, as per PEP-396_.
+
+.. _PEP-396: https://www.python.org/dev/peps/pep-0396/#specification
+.. _single-sourcing the package version: https://packaging.python.org/guides/single-sourcing-package-version/
+
+
+setup.py
+~~~~~~~~
+
+The ``setup.py`` script is used to build and install your package.
+
+Your package can be installed from source with::
+
+    pip install .
+
+or alternatively with::
+
+    python setup.py install
+
+But do remember that as a developer, you should install your package in editable mode, using either::
+
+    pip install --editable .
+
+or::
+
+    python setup.py develop
+
+which will mean changes to the source will affect your installed package immediately without you having to reinstall it.
+
+By default, when the package is installed only the main requirements, listed in ``requirements.txt`` will be installed with it.
+Requirements listed in ``requirements-dev.txt``, ``requirements-docs.txt``, and ``requirements-test.txt`` are optional extras.
+The ``setup.py`` script is configured to include these as extras named ``dev``, ``docs``, and ``test``.
+They can be installed along with::
+
+    pip install .[dev]
+
+etc.
+Any additional files named ``requirements-EXTRANAME.txt`` will also be collected automatically and made available with the corresponding name ``EXTRANAME``.
+Another extra named ``all`` captures all of these optional dependencies.
+
+Your README file is automatically included in the metadata when you use setup.py build wheels for PyPI.
+The rest of the metadata comes from ``package_name/__meta__.py``.
+
+Our template setup.py file is based on the `example from setuptools documentation &lt;setuptools-setup.py_&gt;`_, and the comprehensive example from `Kenneth Reitz &lt;kennethreitz/setup.py_&gt;`_ (released under `MIT License &lt;https://github.com/kennethreitz/setup.py/blob/master/LICENSE&gt;`__), with further features added.
+
+.. _kennethreitz/setup.py: https://github.com/kennethreitz/setup.py
+.. _setuptools-setup.py: https://setuptools.readthedocs.io/en/latest/setuptools.html#basic-use
+
+
+Unit tests
+~~~~~~~~~~
+
+The file ``package_name/tests/base_test.py`` provides a class for unit testing which provides easy access to all the numpy testing in one place (so you don&#39;t need to import a stack of testing functions in every test file, just import the ``BaseTestClass`` instead).
+
+If you aren&#39;t using doing numeric tests, you can delete this from the ``package_name/tests/base_test.py`` file.
+
+
+GitHub Actions Workflows
+</pre></div>
+</div>
+<p>GitHub features the ability to run various workflows whenever code is pushed to the repo or a pull request is opened.
+This is one service of several services that can be used to continually run the unit tests and ensure changes can be integrated together without issue.
+It is also useful to ensure that style guides are adhered to</p>
+<p>Five workflows are included:</p>
+<p>docs
+The docs workflow ensures the documentation builds correctly, and presents any errors and warnings nicely as annotations.
+If your repository is public, publicly available html documentation is automatically deployed to the gh-pages branch and https://USER.github.io/PACKAGE/.</p>
+<p>pre-commit
+Runs the pre-commit stack.
+Ensures all contributions are compliant, even if a contributor has not set up pre-commit on their local machine.</p>
+<p>lint
+Checks the code uses the black_ style and tests for flake8_ errors.
+If you are using the pre-commit hooks, the lint workflow is superfluous and can be deleted.</p>
+<p>test
+Runs the unit tests, and pushes coverage reports to Codecov_.
+You’ll need to sign up at Codecov_ with your GitHub account in order for this integration to work.</p>
+<p>release candidate tests
+The release candidate tests workflow runs the unit tests on more Python versions and operating systems than the regular test workflow.
+This runs on all tags, plus pushes and PRs to branches named like “v1.2.x”, etc.
+Wheels are built for all the tested systems, and stored as artifacts for your convenience when shipping a new distribution.</p>
+<p>If you enable the <code class="docutils literal notranslate"><span class="pre">publish</span></code> job on the release candidate tests workflow, you can also push built release candidates to the <code class="docutils literal notranslate"><span class="pre">Test</span> <span class="pre">PyPI</span> <span class="pre">&lt;testpypi_&gt;</span></code>_ server.
+For this to work, you’ll also need to add your Test <code class="docutils literal notranslate"><span class="pre">PyPI</span> <span class="pre">API</span> <span class="pre">token</span> <span class="pre">&lt;pypi-api-token_&gt;</span></code>_ to your <code class="docutils literal notranslate"><span class="pre">GitHub</span> <span class="pre">secrets</span> <span class="pre">&lt;github-secrets_&gt;</span></code><em>.
+Checkout the <code class="docutils literal notranslate"><span class="pre">pypa/gh-action-pypi-publish</span> <span class="pre">&lt;pypi-publish_&gt;</span></code></em> GitHub action, and <code class="docutils literal notranslate"><span class="pre">PyPI's</span> <span class="pre">guide</span> <span class="pre">on</span> <span class="pre">distributing</span> <span class="pre">from</span> <span class="pre">CI</span> <span class="pre">&lt;ci-packaging_&gt;</span></code>_ for more information on this.
+With minimal tweaks, this job can be changed to push to PyPI for real, but be careful with this since releases on PyPI can not easily be yanked.</p>
+<p>.. _Codecov: https://codecov.io/
+.. _ci-packaging: https://packaging.python.org/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/
+.. _github-secrets: https://docs.github.com/en/actions/reference/encrypted-secrets
+.. _pypi-api-token: https://pypi.org/help/#apitoken
+.. _pypi-publish: https://github.com/pypa/gh-action-pypi-publish
+.. _testpypi: https://test.pypi.org/</p>
+<p>Other CI/CD options</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+Alternative CI/CD services are also available for running tests.
+
+- `Travis CI &lt;https://travis-ci.org/&gt;`_ offers a free trial service.
+
+- `Circle CI &lt;https://circleci.com&gt;`_ is another option with a limited `free option &lt;https://circleci.com/pricing/#build-linux&gt;`_.
+
+- `Appveyor &lt;https://www.appveyor.com&gt;`_ useful for testing on Windows.
+  This offers an alternative to GitHub Actions if you need to `build Windows wheel files to submit to PyPI &lt;https://github.com/ogrisel/python-appveyor-demo&gt;`_.
+
+- `Jenkins &lt;https://jenkins.io/&gt;`_ is useful if you want to run your CI test suite locally or on your own private server instead of in the cloud.
+
+
+Contributing
+------------
+
+Contributions are welcome! If you can see a way to improve this template:
+
+- Do click the fork button
+- Make your changes and make a pull request.
+
+Or to report a bug or request something new, make an issue.
+
+
+.. highlight:: python
+</pre></div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Tom Farley<br/>
+  
+      &copy; Copyright 2022, Tom Farley.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
