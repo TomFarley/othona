@@ -3,7 +3,7 @@ Module provides a simple cubic_rectification function.
 """
 
 import logging
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Optional
 
 import numpy as np
@@ -45,13 +45,20 @@ class CiviLocalExportReader():
 
         return civi_data
 
-@dataclass
+# @dataclass
 class ParticipantData:
     """Class for storing and working with event participant data."""
-    event: str
-    participant_data: pd.DataFrame = pd.DataFrame([])
-    civi_data: pd.DataFrame = None
-    catering_list: Optional(pd.DataFrame) = None
+    
+    # Fields for @dataclass
+    # participant_data: pd.DataFrame = field(default_factory=pd.DataFrame, args=[])
+    # catering_list: pd.DataFrame | None = None
+    # catering_list: pd.DataFrame | None = None   
+    
+    def __init__(self, event, civi_data=None):
+        self.event: str = event
+        self.civi_data: Optional(pd.DataFrame) = civi_data
+        self.participant_data: Optional(pd.DataFrame) = None
+        self.catering_list: Optional(pd.DataFrame) = None
 
     def run_checks():
         raise NotImplementedError
